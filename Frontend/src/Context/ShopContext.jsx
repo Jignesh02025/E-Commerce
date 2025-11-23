@@ -11,7 +11,7 @@ const ShopContextProvider = ({ children }) => {
     const [qut, setQut] = useState(0);
     const [user] = useAuth(); 
     const currentuser = user?.user?._id;
-    const Backend_Url = "http://localhost:4000/";
+    const Backend_Url = "e-commerce-backend-umber-two.vercel.app";
 
      const getTotalCartItems = async () => {
         if (!currentuser) return;
